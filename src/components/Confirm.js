@@ -32,11 +32,11 @@ class FormUserDetails extends Component {
                 secondaryText={ lastName }
               />
               <ListItem 
-                primaryText="First Name"
+                primaryText="Email"
                 secondaryText={ email }
               />
               <ListItem 
-                primaryText="First Name"
+                primaryText="Occupation"
                 secondaryText={ occupation }
               />
                <ListItem 
