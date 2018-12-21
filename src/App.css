@@ -14,3 +14,26 @@ html {
 .App {
     text-align: center;
 }
+
+.success-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.success-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.success-text {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
