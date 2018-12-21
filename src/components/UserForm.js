@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import FormUserDetails from "./FormUserDetails";
+import FormPersonalDetails from "./FormPersonalDetails";
+import Confirm from "./Confirm";
+import Success from "./Success";
 
-export class UserForm extends Component {
+class UserForm extends Component {
   state = {
     step: 1,
     firstName: "",
@@ -36,7 +39,7 @@ export class UserForm extends Component {
   };
 
   render() {
-    const {  step } = this.state;
+    const { step } = this.state;
     const {
       firstName,
       lastName,
@@ -58,25 +61,25 @@ export class UserForm extends Component {
         );
       case 2:
         return (
-         /*  <FormPersonalDetails
+         <FormPersonalDetails
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             handleChange={this.handleChange}
             values={values}
-          /> */
-          <p>temp</p>
+          />
         );
       case 3:
         return (
-         /*  <Confirm
+          <Confirm
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             values={values}
-          /> */
-          <p>temp2</p>
+          />
         );
       case 4:
-        return <p>temp3</p>;
+        return (
+          <Success />
+        );
     }
   }
 }
